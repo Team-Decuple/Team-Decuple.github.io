@@ -1,0 +1,680 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>개인정보 수집 및 이용 약관</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="efc9c183-175a-4395-8b19-9ed172e86ec7" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/solid_yellow.png" style="object-position:center 40%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">⚠️</span></div><h1 class="page-title">개인정보 수집 및 이용 약관</h1></header><div class="page-body"><h3 id="f7f35435-a585-4781-98b9-aa034fb33d79" class="">들어가기 전에</h3><p id="5899bf2a-c413-4437-ad57-397370ba9e14" class="">본 개인정보 수집 및 이용약관에서는 팀 데큐플과 그 산하의 모든 프로젝트(이하 <strong>팀 데큐플</strong>이라 합니다)의 ‘개인정보 수집에 대한 취급 및 처리 방침’과, ‘개인정보를 보유, 활용, 공개하는 방법과 그 조건’에 대해 설명합니다.</p><p id="4d840b23-dd01-4cf2-9737-e3eec24ab5bf" class="">팀 데큐플은 절대 프로젝트 이용자(이하 <strong>사용자</strong>라 합니다)로부터 수집한 개인정보들을 절대 악의적인 목적으로 사용하지 않습니다. 악의적인 목적에 대한 규정은 다음과 같습니다:</p><ul id="ee6e82fd-8b39-49e4-a456-353090bd92a2" class="bulleted-list"><li style="list-style-type:disc"><strong>허가 없이</strong> 사용자의 개인정보를 공개하는 경우</li></ul><ul id="0412ddf2-4ce6-4db3-bbd8-095726218543" class="bulleted-list"><li style="list-style-type:disc"><strong>허가 없이</strong> 사용자의 개인정보를 타사나 타 서비스에 공개•공유하거나 양도하는 경우</li></ul><ul id="82f8bf7a-0724-4087-be5e-b9a8986dccfa" class="bulleted-list"><li style="list-style-type:disc">기타 개인정보 관련 법률에 위배되는 경우</li></ul><p id="d3bb5dda-7579-4ac3-9dfd-71a7e5514186" class="">
+</p><h3 id="aa2ad6fe-06e1-44d4-91bf-785c12fad5ec" class="">적용 범위</h3><p id="03eeb55a-f174-421c-8674-83519cf25dea" class="">팀 데큐플의 프로젝트는 팀 데큐플이 운영하지 않는 타 서비스로 통하는 링크를 포함할 수 있습니다. 본 개인정보 수집 및 이용약관에서는 팀 데큐플이 운영하지 않는 외부 서비스에는 적용되지 않습니다.</p><p id="550e5a6b-d76a-41e4-b0fd-f6f30dd7a629" class="">
+</p><h3 id="9cb231af-a9b2-4b84-a755-81619aeac010" class="">동의</h3><p id="63fff331-2cb6-45b7-8e6c-f74206e4e996" class="">법률에 따라 명시적 동의를 제공함으로서 사용자는 팀 데큐플이 <strong>개인정보를 수집할 수 있다</strong>는 점과 <strong>수집한 </strong><em><strong>개인정보를 관련 법령이 허용하거나 요구하는 바에 따라</strong></em><strong> 사용•공개•제공•양도하는 것</strong>에 동의하게 됩니다. 서비스를 <strong>설치</strong>하거나 서비스에 <strong>가입</strong> 또는 <strong>신청</strong>할 경우 개인정보 수집 및 이용약관에 동의하는 화면을 표시하며 동의를 요구할 수 있습니다.</p><p id="c7e76e58-7100-4bcb-8309-ebbe3d1cb34a" class="">예외적으로, 다음 프로젝트들은 이 약관에 동의한다는 의사를 밝히지 않고 서비스 이용을 할 경우에도 이 약관에 자동적으로 동의하는 것으로 간주될 수 있습니다:</p><ul id="b1ee4057-df5f-437e-8266-2bec267746ae" class="bulleted-list"><li style="list-style-type:disc">팀 데큐플의 모든 디스코드 봇 프로젝트</li></ul><p id="fb61f2c1-af1e-4791-9c91-a2dd50b06eba" class="">법적인 근거를 근거로 사용자는 언제든 팀 데큐플에 연락(이메일•기타 메신저)하여 해당 동의 사항에 대해 철회를 요구할 수 있습니다.</p><p id="5f69007b-3fc0-435c-98e9-03f6874c5d38" class="">사용자가 동의를 거절하거나 철회하는 경우 사용자는 팀 데큐플의 일부 프로젝트 및 서비스를 제공할 수 없는 점을 인지하고 인정하는 것으로 간주됩니다.</p><p id="cab37857-24bd-4f05-bc83-b9958388138d" class="">
+</p><h3 id="b1980086-3892-4716-b7f1-ad15d96e69cf" class="">개정과 업데이트</h3><p id="d7f94748-ae9d-4702-a50f-69ab387e1ba9" class="">팀 데큐플은 필요한 경우 사용자에게 사전 통지 없이 본 개인정보 수집 및 이용약관의 특정 부분을 수정•변경•추가•보완•삭제할 수 있습니다.</p><p id="e78c05e0-c005-4c4d-9ba4-b14eb75715b2" class="">해당 변경 사항이 반영된 이후에도 사용자가 팀 데큐플의 서비스를 계속 이용할 경우 개정 사항을 수용한 것으로 간주됩니다. 개정 사항은 <em>공식 포럼</em>이나 <em>웹 사이트</em>에 공지됩니다.</p><p id="56859917-006f-4a61-8ea4-1559f273dc11" class=""><strong>관련 법령에 의하여, 허용•요구되는 경우를 제외하고 동의를 받은 목적 이외의 목적에 의해 개인정보를 새로 수집•활용•공개하려는 경우 필요한 동의를 다시 얻습니다.</strong></p><p id="993c86e1-26df-4ccb-a768-2010d774f13e" class="">
+</p><h3 id="8325aefd-aa41-425c-8163-915985aa0181" class="">개인정보 수집 방법</h3><p id="da374706-b038-40ef-baba-33bb9799e239" class="">일반적으로 팀 데큐플은 사용자로부터 개인정보를 다음과 같이 수집합니다:</p><ul id="092830e4-3a50-46cd-9e32-9e547c704dad" class="bulleted-list"><li style="list-style-type:disc">웹사이트•후원 등을 통한 사용자의 제품•서비스 이용•구매와 관련하여 개인정보를 수집할 수 있습니다.</li></ul><ul id="808cf07a-a22d-4b67-82f0-4074253032a1" class="bulleted-list"><li style="list-style-type:disc">사용자가 회원가입을 완료하거나 프로필을 완성하는 경우 개인정보를 수집합니다.</li></ul><ul id="eac627bd-7a5e-4050-a679-6a55dc5d7f3b" class="bulleted-list"><li style="list-style-type:disc">OAuth(타 웹사이트의 계정을 통한 로그인) 방식으로 회원가입하거나 로그인을 완료하는 경우 개인정보를 수집합니다.</li></ul><ul id="1f4a290c-af82-4e74-bd5b-516aa00b537e" class="bulleted-list"><li style="list-style-type:disc">제품 리뷰•피드백•건의사항을 제출할 경우 내용을 검토하기 위해 개인정보와 보내주신 내용을 수집합니다.</li></ul><ul id="76e7a87e-d19c-4c8b-8a61-490ccbf272ee" class="bulleted-list"><li style="list-style-type:disc">일부 서비스를 이용할 경우 데이터베이스 접근 및 저장을 위해 개인정보를 수집합니다.</li></ul><ul id="e843b641-2336-413f-97a2-d16d9e6e3a4a" class="bulleted-list"><li style="list-style-type:disc">사용자를 대상으로 하는 설문조사나 의견, 불만 및 선호도 조사에 대한 참여 및 응답을 수집합니다.</li></ul><ul id="167542eb-e597-45c3-975e-3768c2591cf4" class="bulleted-list"><li style="list-style-type:disc">이벤트 및 그 외 홍보 활동에 개인정보를 수집할 수 있습니다.</li></ul><p id="9a0e3448-f6ed-4972-a800-f9cb85c95788" class="">
+</p><h3 id="1c6104bd-6802-44a7-85c6-d2625af960c1" class="">처리하는 개인정보 항목</h3><p id="c3e4becc-a8b6-4bae-ab2b-eaecccbc4ab4" class="">프로젝트에 따라서 처리하는 개인정보 항목이 다를 수 있습니다. 확인을 원하시는 프로젝트의 항목을 확인하여 주십시오:</p><ul id="7828cba4-1662-4996-8dd3-5cd2bb381253" class="bulleted-list"><li style="list-style-type:disc"><strong>팀 데큐플의 모든 디스코드 봇 프로젝트</strong><ul id="46a17bad-1c49-429a-bdad-eb4331b7cb1f" class="bulleted-list"><li style="list-style-type:circle">Discord 사용자 관련<ul id="6f9338e2-b40f-431b-9515-0e36b54f27be" class="bulleted-list"><li style="list-style-type:square">사용자의 태그•ID</li></ul><ul id="df850fa6-ae3a-44f2-a34c-5b33fa639934" class="bulleted-list"><li style="list-style-type:square">사용자가 소속된 서버 리스트</li></ul><ul id="cb73934b-ec2a-4473-ba57-cdb041d18b8f" class="bulleted-list"><li style="list-style-type:square">개인 메시지로 보낸 내용</li></ul><ul id="fb3a57be-be80-4562-bd50-66a573d3c57b" class="bulleted-list"><li style="list-style-type:square">서버 메시지로 보낸 내용</li></ul></li></ul><ul id="15a7841d-2658-45a9-8f34-c71b134d05f4" class="bulleted-list"><li style="list-style-type:circle">Discord 서버 관련<ul id="b6996a84-46b3-4c90-91b5-e2d4e0b72b76" class="bulleted-list"><li style="list-style-type:square">서버 수용 인원</li></ul><ul id="8a6d4614-b8d3-4246-81a2-cc299c6044af" class="bulleted-list"><li style="list-style-type:square">서버 메시지로 보낸 내용</li></ul><ul id="138f3035-a1a2-454c-ba7e-992639da9e8b" class="bulleted-list"><li style="list-style-type:square">서버의 채팅 채널•보이스 채널 목록</li></ul><ul id="67efb5d8-51c9-49f2-a75b-ba9099afbc7b" class="bulleted-list"><li style="list-style-type:square">사용한 명령어<ul id="1e2f7671-bcc5-4b31-a13c-9432069cf6fd" class="bulleted-list"><li style="list-style-type:disc">뮤직 모듈을 사용하여 플레이한 음악 목록</li></ul></li></ul></li></ul><ul id="5af35d4f-a970-491d-bb92-d38491dab19d" class="bulleted-list"><li style="list-style-type:circle">기타<ul id="36f75108-d54c-4ef5-af91-f62e074d243a" class="bulleted-list"><li style="list-style-type:square">사용자가 저장한 플레이리스트</li></ul><ul id="94e5dbb5-cf82-45ea-abb9-61bb2d3f94f3" class="bulleted-list"><li style="list-style-type:square">사용자가 등록한 명령어</li></ul><ul id="645cc9d7-e480-44a7-8486-e6b90997faed" class="bulleted-list"><li style="list-style-type:square">사용자가 사용한 명령어</li></ul><ul id="e959e092-af85-4179-bc96-544105b11326" class="bulleted-list"><li style="list-style-type:square">생년월일 (NSFW 컨텐츠 나이 확인)</li></ul><ul id="82312681-1660-4913-9dc9-bb0e4f8e88ab" class="bulleted-list"><li style="list-style-type:square">개인적 선호도와 리뷰•피드백</li></ul><ul id="0e01443f-8662-4cf2-89ad-08ccbcf3d296" class="bulleted-list"><li style="list-style-type:square">기타 Discord OAuth 로그인 페이지에서 처리를 동의한 모든 정보</li></ul></li></ul></li></ul><p id="d26865eb-49fd-42d2-923c-54eed637ad52" class="">
+</p><h3 id="9ebfa218-4a65-4d1d-9429-3d3d3a9b139a" class="">사용자의 개인정보 사용 목적</h3><p id="bc13e0b6-fc4c-45c2-91ee-5b967112dc62" class="">팀 데큐플은 사용자로부터 개인정보를 수집하여 다음과 같은 항목들에 개인정보를 활용합니다:</p><ul id="afd66e93-a52a-43d7-8a31-02c67a679648" class="bulleted-list"><li style="list-style-type:disc">정보•제품•서비스의 개발•향상•홍보•판매•제공</li></ul><ul id="95adf1c8-a5c1-4506-bcd0-d273f154549a" class="bulleted-list"><li style="list-style-type:disc">구매•거래 처리와 같은 상업적 관계 확립 및 처리</li></ul><ul id="4124ff58-ac0b-4618-b934-e73135aefc2b" class="bulleted-list"><li style="list-style-type:disc">참여한 이벤트•기타 홍보 활동의 처리•운영</li></ul><ul id="93b212cc-93ec-4b0f-a832-a5bcc06786bd" class="bulleted-list"><li style="list-style-type:disc">사용자와의 연락과 그에 대한 답변</li></ul><ul id="0056ce5c-725f-4feb-bc8e-11ee8399ca2f" class="bulleted-list"><li style="list-style-type:disc">사용자에게 더 편한 서비스 제공(맞춤 설정)<ul id="faf9bc5c-09f3-461b-93c0-1c232fa4f278" class="bulleted-list"><li style="list-style-type:circle">사용자 친화적 서비스 정책</li></ul></li></ul><ul id="bc8d36be-c7c8-4f47-aa4d-e51cfb39a38a" class="bulleted-list"><li style="list-style-type:disc">프로젝트의 주 목적의 이행 및 본 개인정보 수집 및 이용 약관의 준수</li></ul><ul id="c36d97be-7315-447f-b52b-b2f118fc9bb9" class="bulleted-list"><li style="list-style-type:disc">오류•부주의•계약 위반•사기 등의 기타 불법 행위의 발견, 이러한 행위들로부터 팀 데큐플과 제3자를 보호</li></ul><ul id="b29469bb-313e-4947-bd24-2d7cedf55964" class="bulleted-list"><li style="list-style-type:disc">팀 데큐플과 관련된 모든 형태의 사업 거래 참여</li></ul><ul id="e5b78c17-911e-40c6-9503-feecc8088892" class="bulleted-list"><li style="list-style-type:disc">원활한 서비스를 위한 데이터베이스 이용</li></ul><p id="acef46a5-b702-4c10-ac80-133308241b27" class="">
+</p><h3 id="93dda597-b850-4e53-a632-08399428559f" class="">개인정보의 보관</h3><p id="d9cb5535-b014-47a9-b797-5e897179530c" class="">팀 데큐플은 관련 법령과 팀 데큐플 내부 개인정보 정책에 의해 개인정보를 보관합니다. 단 팀 데큐플이 해당 개인정보가 더 이상 필요하지 않다고 판단될 경우 개인정보를 파기하거나 영구적으로 삭제하기 위한 합리적인 절차를 따릅니다.</p><ol type="1" id="d16aa638-eb29-4cdc-b8b5-8a6e651fc6e5" class="numbered-list" start="1"><li><strong>개인정보의 처리 및 보유 기간</strong><ol type="a" id="ea1f942f-9c05-4247-a346-b17d855672e5" class="numbered-list" start="1"><li>개인정보 수집일(일부 서비스는 마지막으로 서비스를 이용한 날짜)로부터 정확히 3년간 보유 및 이용되오며 관련 법령의 규정에 의해 필요한 경우 법령에 규정된 기간동안 보유됩니다.</li></ol><ol type="a" id="1bf47400-6269-45f5-b520-c1dc1bf3b647" class="numbered-list" start="2"><li>원칙적으로, 개인정보의 수집 및 이용 목적이 달성되는 경우 개인정보는 <em>문단 2</em>에서 설명하는 바와 같이 파기됩니다. 사용자가 이 약관에 동의한 것에 대해 철회를 요구하거나 개인정보를 삭제하는 것을 요구하는 경우 개인정보를 적기에 파기합니다.<ol type="i" id="0473e4e3-5fdf-4c84-be3d-253c4a465053" class="numbered-list" start="1"><li>단, 관련 법규에 따라서 개인정보를 보유하여야 하는 경우 개인정보를 정해진 기간 및 목적에 따라 보관 및 이용됩니다.</li></ol></li></ol></li></ol><ol type="1" id="53757827-fce4-4846-b478-7f3aff7073a7" class="numbered-list" start="2"><li><strong>개인정보의 파기</strong><ol type="a" id="476c10f5-17e5-4020-a61b-253852c055fd" class="numbered-list" start="1"><li>개인정보를 파기하는 경우 팀 데큐플은 개인정보를 복구•재생할 수 없도록 만듭니다. 그 과정에서 다음과 같은 과정을 거칩니다.<ol type="i" id="f6b8e657-a189-4e1c-ae9f-9019b640ce69" class="numbered-list" start="1"><li>개인정보를 포함하는 전자 파일(데이터베이스에 저장된 데이터)은 복구할 수 없도록 만드는 기술적 방법을 동원하여 영구적으로 삭제합니다.</li></ol><ol type="i" id="09f6ae09-c6f3-49b9-bfe9-3bb61bad1dbc" class="numbered-list" start="2"><li>기록•인쇄물•문서 등의 기타 매체에 해당 개인정보가 포함되어 있는 경우 파쇄하거나 소각합니다</li></ol></li></ol><ol type="a" id="89560fad-1147-4486-a8cd-e27bd28f122d" class="numbered-list" start="2"><li>처리•보유 기간이 만료되었지만 <em>문단 1</em>에서 설명한 바와 같은 이유들로 인해 개인정보를 지속적으로 보유하여야 하는 경우 관련 개인정보는 기술적으로 가능한 한도 내에서 기타 개인정보와 별도로 보관•유지됩니다.</li></ol></li></ol><p id="3b0c0731-df79-4d6c-9e40-97fbc47affbb" class="">
+</p><h3 id="8ce435e9-b7a4-4e1d-9899-807ea0031e71" class="">아동의 개인정보</h3><p id="a58859a5-7dee-48a0-b67d-052a83a7dac9" class="">팀 데큐플의 프로젝트별로 다릅니다. 단, 프로젝트마다 정해진 ‘적합한 나이’ 미만의 나이를 가진 아동의 경우 ‘아동의 개인정보 권리’에 포함되는 것으로 인정하며 부모 및 법정대리인이 아동의 온라인 상 행위 및 권리에 대한 적극적인 역할을 하는 것으로 권장합니다.</p><p id="d0e39225-2932-4e2d-8b2d-b2f56a51eeec" class="">따라서 <strong>허가하지 않은 경우</strong> 적합한 나이 미만의 아동으로부터 개인정보를 수집하지 않습니다.</p><p id="2da7b9a4-41e7-45af-8f0a-55fd293b501a" class="">
+</p><h3 id="02547093-b69c-4842-ad31-cb0744478a74" class="">사용자의 권리•의무와 행사 방법</h3><p id="68315436-0bae-4d9e-8912-36a552337e4c" class="">사용자는 정보 주체입니다. 따라서 다음과 같은 요구를 팀 데큐플에게 행사할 수 있습니다:</p><ul id="46710521-2ebc-4c6f-9c12-8d5aa5fa44e8" class="bulleted-list"><li style="list-style-type:disc">사용자의 개인정보에 접근</li></ul><ul id="4225fda5-d814-4187-9ef1-f0b41cba6464" class="bulleted-list"><li style="list-style-type:disc">사용자의 개인정보를 수정•삭제</li></ul><ul id="d53e0e25-dec4-4aed-ae92-7341e286986d" class="bulleted-list"><li style="list-style-type:disc">사용자의 개인정보 처리 정지</li></ul><p id="d124e4cf-0043-481c-8efa-44b034b70149" class="">만 14세 미만 아동의 법정대리인은 아동을 대신하여 이와 같은 요청을 할 수 있습니다. 단, 이러한 요청을 받는 경우 요청의 당사자가 정보 주체 또는 수권 대리인인지의 여부를 확인해야만 합니다. 관련 법령이나 이에 상응하는 이유로 이를 거절하는 것에 대한 합당한 이유가 존재하는 경우 이러한 요청을 거절할 수 있습니다.</p><p id="9e2a4de0-d858-4191-93bc-d479a231afa1" class="">팀 데큐플은 보관하는 개인정보가 정확•안전하며 가장 최신의 정보임을 보증하기 위해 합리적 조치를 취합니다.</p><p id="1c90a3ab-cd00-4286-90ca-7b0b81040db0" class="">사용자께서 이 약관에 대해 질문•문의사항이 있거나 팀 데큐플이 보관 중인 개인정보가 정확하지 않거나, 안전하지 않거나, 최신의 정보가 아닌 것으로 생각하신다면 다음 개인정보 처리관리자에게 아래 연락처로 문의하십시오. 이에 대한 합리적 조치를 취하겟습니다.</p><p id="838b1016-b83b-47d9-92ca-1798106382c9" class="">
+</p><h3 id="f25f6c3b-6458-4a24-a904-abf6f82269bc" class="">문의사항 접수</h3><p id="625f0038-ab02-4e58-abe5-e8d271b6923b" class=""><strong>직책</strong> : 팀장 및 리드 개발자 (데이터베이스 관리자)</p><p id="2e219e3d-b070-4819-8e94-8163b9ae3cad" class=""><strong>이메일</strong> : playerdecuple@decu.kr</p><p id="f4577e6e-fcd7-4b47-903d-4b5b4b5421db" class=""><strong>디스코드 태그</strong> : <code>데큐플#9999</code></p><p id="e9f3ebf2-1a94-42cc-b0b2-57fc79ca7201" class="">
+</p></div></article></body></html>
